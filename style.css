@@ -5,7 +5,7 @@ Description: Cinematic, high-impact dramatic cosplay & concept photography theme
 Author: Gary Wallage
 Author URI: https://garywallage.uk
 Template: gary-wedding-pro
-Version: 1.0.7
+Version: 1.0.8
 License: GNU General Public License v2 or later
 Text Domain: gary-cosplay-pro
 */
@@ -166,4 +166,41 @@ body {
 .service-plaque-description {
     color: #2E2538 !important;
     font-weight: 600 !important;
+}
+
+/* Lighten Typography on Dark Body/Dark Background */
+body, 
+body p, 
+.site-main p, 
+.entry-content p,
+.home-intro p {
+    color: #EFEAF5 !important; /* Luminescent Silver */
+}
+
+h1, h2, h3, h4, h5, h6,
+.entry-title,
+.wp-block-heading {
+    color: #00E5FF !important; /* Bright Neon Cyan on dark void */
+    text-shadow: 0 0 12px rgba(0, 229, 255, 0.35);
+}
+
+/* Re-assert dark text strictly on white boxes */
+.service-card,
+.investment-plaque,
+.gw-investment-plaque,
+.gw-z-content,
+[style*="background: #fff"],
+[style*="background:#fff"],
+[style*="background: white"],
+[style*="background:white"] {
+    color: #1A0D2E !important;
+}
+
+.service-card h1, .service-card h2, .service-card h3, .service-card h4,
+.investment-plaque h1, .investment-plaque h2, .investment-plaque h3, .investment-plaque h4,
+.gw-z-content h1, .gw-z-content h2, .gw-z-content h3, .gw-z-content h4,
+[style*="background: #fff"] h1, [style*="background: #fff"] h2, [style*="background: #fff"] h3, [style*="background: #fff"] h4,
+[style*="background:#fff"] h1, [style*="background:#fff"] h2, [style*="background:#fff"] h3, [style*="background:#fff"] h4 {
+    color: #380062 !important;
+    text-shadow: none !important;
 }
