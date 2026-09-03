@@ -5,7 +5,7 @@ Description: Cinematic, high-impact dramatic cosplay & concept photography theme
 Author: Gary Wallage
 Author URI: https://garywallage.uk
 Template: gary-wedding-pro
-Version: 1.0.3
+Version: 1.0.4
 License: GNU General Public License v2 or later
 Text Domain: gary-cosplay-pro
 */
@@ -15,11 +15,11 @@ Text Domain: gary-cosplay-pro
     --brand-bg: #0F0A17;              /* Deep Cosmic Void */
     --brand-black: #08040D;           /* Obsidian Black */
     --brand-text: #EFEAF5;            /* Luminescent Silver Text */
-    --brand-accent: #5B2C6F;          /* Imperial Purple Primary */
-    --brand-gold-light: #9B59B6;      /* Neon Amethyst Accent */
+    --brand-accent: #4B0082;          /* Imperial Purple Primary */
+    --brand-gold-light: #00E5FF;      /* Neon Amethyst Accent */
     --brand-cyan: #00E5FF;            /* Sci-Fi Neon Cyan Highlight */
     --brand-white: #FFFFFF;
-    --brand-border: rgba(155, 89, 182, 0.35);
+    --brand-border: rgba(0, 229, 255, 0.35);
     
     /* Typography & Hierarchy (Unified Wedding Standard) */
     --font-primary: 'Lato', sans-serif;
@@ -92,4 +92,15 @@ body {
 /* Explicit Blacksword Script Header Branding */
 .site-title-blacksword {
     font-family: 'Blacksword', cursive !important;
+}
+
+
+/* Site-Specific Header Accent Line & Hover Highlights */
+.site-header {
+    border-bottom: 2px solid var(--brand-accent) !important;
+}
+.gw-genre-link.is-current,
+.gw-genre-link:hover {
+    color: var(--brand-gold-light) !important;
+    border-bottom-color: var(--brand-gold-light) !important;
 }
