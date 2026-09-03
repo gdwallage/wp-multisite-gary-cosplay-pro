@@ -5,7 +5,7 @@ Description: Cinematic, high-impact dramatic cosplay & concept photography theme
 Author: Gary Wallage
 Author URI: https://garywallage.uk
 Template: gary-wedding-pro
-Version: 1.0.6
+Version: 1.0.7
 License: GNU General Public License v2 or later
 Text Domain: gary-cosplay-pro
 */
@@ -126,4 +126,44 @@ body {
 .site-header .hamburger-inner::before,
 .site-header .hamburger-inner::after {
     background-color: #4B0082 !important;
+}
+
+/* Enhanced Legibility on White Panels & Cards */
+.service-card,
+.investment-plaque,
+.gw-investment-plaque,
+.gw-z-content,
+.step-content-box,
+[style*="background: #fff"],
+[style*="background:#fff"],
+[style*="background: white"],
+[style*="background:white"] {
+    color: #1A0D2E !important;
+}
+
+.service-card .service-card-title,
+.investment-plaque .package-name-sub,
+.investment-plaque .price-val,
+.service-plaque-description,
+.investment-plaque .service-duration-text {
+    color: #380062 !important; /* Rich deep indigo for strong contrast on white */
+    font-weight: 700 !important;
+}
+
+.service-card .service-card-price {
+    background: #380062 !important;
+    color: #FFFFFF !important;
+}
+
+.service-card .service-card-price span,
+.service-card .service-card-price small {
+    color: #FFFFFF !important;
+    font-weight: 700 !important;
+}
+
+.service-card .gw-bullet-list li,
+.service-card .card-included-items li,
+.service-plaque-description {
+    color: #2E2538 !important;
+    font-weight: 600 !important;
 }
